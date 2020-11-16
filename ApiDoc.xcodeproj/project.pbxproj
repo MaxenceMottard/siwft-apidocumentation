@@ -3,27 +3,72 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D05E768F2562E38B00583DF5 /* Selfbuy.postman_collection.json in Resources */ = {isa = PBXBuildFile; fileRef = D05E768E2562E38B00583DF5 /* Selfbuy.postman_collection.json */; };
+		D05E769A2562E4BD00583DF5 /* PostmanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76992562E4BD00583DF5 /* PostmanService.swift */; };
+		D05E769F2562E4DA00583DF5 /* PostmanJSONV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E769E2562E4DA00583DF5 /* PostmanJSONV2.swift */; };
+		D05E76A42562E55700583DF5 /* PostmanInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76A32562E55700583DF5 /* PostmanInfo.swift */; };
+		D05E76A82562E61E00583DF5 /* PostmanItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76A72562E61E00583DF5 /* PostmanItem.swift */; };
+		D05E76AB2562E6CF00583DF5 /* PostmanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76AA2562E6CF00583DF5 /* PostmanRequest.swift */; };
+		D05E76AE2562E70500583DF5 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76AD2562E70500583DF5 /* HTTPMethod.swift */; };
+		D05E76B62562E87F00583DF5 /* PostmanBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76B52562E87F00583DF5 /* PostmanBody.swift */; };
+		D05E76B92562E92800583DF5 /* PostmanUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76B82562E92800583DF5 /* PostmanUrl.swift */; };
+		D05E76BC2562EB7000583DF5 /* PostmanVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76BB2562EB7000583DF5 /* PostmanVariable.swift */; };
+		D05E76C12562EBCA00583DF5 /* PostmanAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76C02562EBCA00583DF5 /* PostmanAuth.swift */; };
+		D05E76C42562EC1A00583DF5 /* PostmanAuthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76C32562EC1A00583DF5 /* PostmanAuthType.swift */; };
+		D05E76C72562EC5100583DF5 /* PostmanAuthBearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76C62562EC5100583DF5 /* PostmanAuthBearer.swift */; };
+		D05E76D82562EDCE00583DF5 /* HelperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76D42562EDCE00583DF5 /* HelperAssembly.swift */; };
+		D05E76D92562EDCE00583DF5 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76D52562EDCE00583DF5 /* Injected.swift */; };
+		D05E76DA2562EDCE00583DF5 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76D62562EDCE00583DF5 /* DependencyProvider.swift */; };
+		D05E76DB2562EDCE00583DF5 /* InjectedObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76D72562EDCE00583DF5 /* InjectedObservedObject.swift */; };
+		D05E76DF2562EE0400583DF5 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = D05E76DE2562EE0400583DF5 /* Swinject */; };
+		D05E76E32562EF4000583DF5 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76E22562EF4000583DF5 /* ProjectListView.swift */; };
+		D05E76E72562EF6800583DF5 /* ProjectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76E62562EF6800583DF5 /* ProjectListViewModel.swift */; };
+		D05E76EB2562F11800583DF5 /* ProjectListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76EA2562F11800583DF5 /* ProjectListItemView.swift */; };
+		D05E76F02562F2F800583DF5 /* ProjectListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76EF2562F2F800583DF5 /* ProjectListItemViewModel.swift */; };
 		D09B27B52562DCF500145E3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B27B42562DCF500145E3B /* AppDelegate.swift */; };
 		D09B27B72562DCF500145E3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B27B62562DCF500145E3B /* SceneDelegate.swift */; };
-		D09B27B92562DCF500145E3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B27B82562DCF500145E3B /* ContentView.swift */; };
+		D09B27B92562DCF500145E3B /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B27B82562DCF500145E3B /* ProjectView.swift */; };
 		D09B27BB2562DCF900145E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09B27BA2562DCF900145E3B /* Assets.xcassets */; };
 		D09B27BE2562DCF900145E3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09B27BD2562DCF900145E3B /* Preview Assets.xcassets */; };
 		D09B27C12562DCF900145E3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09B27BF2562DCF900145E3B /* LaunchScreen.storyboard */; };
+		D0D0E99D2563160B00CE224F /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0E99C2563160B00CE224F /* ProjectViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D05E768E2562E38B00583DF5 /* Selfbuy.postman_collection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Selfbuy.postman_collection.json; sourceTree = "<group>"; };
+		D05E76992562E4BD00583DF5 /* PostmanService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanService.swift; sourceTree = "<group>"; };
+		D05E769E2562E4DA00583DF5 /* PostmanJSONV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanJSONV2.swift; sourceTree = "<group>"; };
+		D05E76A32562E55700583DF5 /* PostmanInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanInfo.swift; sourceTree = "<group>"; };
+		D05E76A72562E61E00583DF5 /* PostmanItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanItem.swift; sourceTree = "<group>"; };
+		D05E76AA2562E6CF00583DF5 /* PostmanRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanRequest.swift; sourceTree = "<group>"; };
+		D05E76AD2562E70500583DF5 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		D05E76B52562E87F00583DF5 /* PostmanBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanBody.swift; sourceTree = "<group>"; };
+		D05E76B82562E92800583DF5 /* PostmanUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanUrl.swift; sourceTree = "<group>"; };
+		D05E76BB2562EB7000583DF5 /* PostmanVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanVariable.swift; sourceTree = "<group>"; };
+		D05E76C02562EBCA00583DF5 /* PostmanAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanAuth.swift; sourceTree = "<group>"; };
+		D05E76C32562EC1A00583DF5 /* PostmanAuthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanAuthType.swift; sourceTree = "<group>"; };
+		D05E76C62562EC5100583DF5 /* PostmanAuthBearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanAuthBearer.swift; sourceTree = "<group>"; };
+		D05E76D42562EDCE00583DF5 /* HelperAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAssembly.swift; sourceTree = "<group>"; };
+		D05E76D52562EDCE00583DF5 /* Injected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		D05E76D62562EDCE00583DF5 /* DependencyProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
+		D05E76D72562EDCE00583DF5 /* InjectedObservedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectedObservedObject.swift; sourceTree = "<group>"; };
+		D05E76E22562EF4000583DF5 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
+		D05E76E62562EF6800583DF5 /* ProjectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListViewModel.swift; sourceTree = "<group>"; };
+		D05E76EA2562F11800583DF5 /* ProjectListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListItemView.swift; sourceTree = "<group>"; };
+		D05E76EF2562F2F800583DF5 /* ProjectListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListItemViewModel.swift; sourceTree = "<group>"; };
 		D09B27B12562DCF500145E3B /* ApiDoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiDoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09B27B42562DCF500145E3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D09B27B62562DCF500145E3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D09B27B82562DCF500145E3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D09B27B82562DCF500145E3B /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		D09B27BA2562DCF900145E3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D09B27BD2562DCF900145E3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D09B27C02562DCF900145E3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D09B27C22562DCF900145E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0D0E99C2563160B00CE224F /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,15 +76,136 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05E76DF2562EE0400583DF5 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D05E76912562E3A700583DF5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D05E76922562E3BF00583DF5 /* Supporting Files */,
+				D09B27B42562DCF500145E3B /* AppDelegate.swift */,
+				D09B27B62562DCF500145E3B /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D05E76922562E3BF00583DF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D09B27BC2562DCF900145E3B /* Preview Content */,
+				D09B27BF2562DCF900145E3B /* LaunchScreen.storyboard */,
+				D09B27C22562DCF900145E3B /* Info.plist */,
+				D09B27BA2562DCF900145E3B /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D05E76942562E3FC00583DF5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D05E76E12562EF2E00583DF5 /* ProjectList */,
+				D05E76CA2562ECF100583DF5 /* Project */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D05E76982562E4A600583DF5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D05E76992562E4BD00583DF5 /* PostmanService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D05E769D2562E4C600583DF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D05E76A22562E54600583DF5 /* Postman */,
+				D05E76AD2562E70500583DF5 /* HTTPMethod.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D05E76A22562E54600583DF5 /* Postman */ = {
+			isa = PBXGroup;
+			children = (
+				D05E769E2562E4DA00583DF5 /* PostmanJSONV2.swift */,
+				D05E76A32562E55700583DF5 /* PostmanInfo.swift */,
+				D05E76A72562E61E00583DF5 /* PostmanItem.swift */,
+				D05E76BB2562EB7000583DF5 /* PostmanVariable.swift */,
+				D05E76BF2562EBB200583DF5 /* Auth */,
+				D05E76B12562E80A00583DF5 /* Request */,
+			);
+			path = Postman;
+			sourceTree = "<group>";
+		};
+		D05E76B12562E80A00583DF5 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D05E76AA2562E6CF00583DF5 /* PostmanRequest.swift */,
+				D05E76B52562E87F00583DF5 /* PostmanBody.swift */,
+				D05E76B82562E92800583DF5 /* PostmanUrl.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		D05E76BF2562EBB200583DF5 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D05E76C02562EBCA00583DF5 /* PostmanAuth.swift */,
+				D05E76C32562EC1A00583DF5 /* PostmanAuthType.swift */,
+				D05E76C62562EC5100583DF5 /* PostmanAuthBearer.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D05E76CA2562ECF100583DF5 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				D09B27B82562DCF500145E3B /* ProjectView.swift */,
+				D0D0E99C2563160B00CE224F /* ProjectViewModel.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		D05E76D32562EDB300583DF5 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				D05E76D62562EDCE00583DF5 /* DependencyProvider.swift */,
+				D05E76D42562EDCE00583DF5 /* HelperAssembly.swift */,
+				D05E76D52562EDCE00583DF5 /* Injected.swift */,
+				D05E76D72562EDCE00583DF5 /* InjectedObservedObject.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		D05E76E12562EF2E00583DF5 /* ProjectList */ = {
+			isa = PBXGroup;
+			children = (
+				D05E76EE2562F2C500583DF5 /* Item */,
+				D05E76E22562EF4000583DF5 /* ProjectListView.swift */,
+				D05E76E62562EF6800583DF5 /* ProjectListViewModel.swift */,
+			);
+			path = ProjectList;
+			sourceTree = "<group>";
+		};
+		D05E76EE2562F2C500583DF5 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				D05E76EA2562F11800583DF5 /* ProjectListItemView.swift */,
+				D05E76EF2562F2F800583DF5 /* ProjectListItemViewModel.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
 		D09B27A82562DCF500145E3B = {
 			isa = PBXGroup;
 			children = (
+				D05E768E2562E38B00583DF5 /* Selfbuy.postman_collection.json */,
 				D09B27B32562DCF500145E3B /* ApiDoc */,
 				D09B27B22562DCF500145E3B /* Products */,
 			);
@@ -56,13 +222,11 @@
 		D09B27B32562DCF500145E3B /* ApiDoc */ = {
 			isa = PBXGroup;
 			children = (
-				D09B27B42562DCF500145E3B /* AppDelegate.swift */,
-				D09B27B62562DCF500145E3B /* SceneDelegate.swift */,
-				D09B27B82562DCF500145E3B /* ContentView.swift */,
-				D09B27BA2562DCF900145E3B /* Assets.xcassets */,
-				D09B27BF2562DCF900145E3B /* LaunchScreen.storyboard */,
-				D09B27C22562DCF900145E3B /* Info.plist */,
-				D09B27BC2562DCF900145E3B /* Preview Content */,
+				D05E76D32562EDB300583DF5 /* DI */,
+				D05E76912562E3A700583DF5 /* Application */,
+				D05E769D2562E4C600583DF5 /* Models */,
+				D05E76982562E4A600583DF5 /* Services */,
+				D05E76942562E3FC00583DF5 /* Views */,
 			);
 			path = ApiDoc;
 			sourceTree = "<group>";
@@ -91,6 +255,9 @@
 			dependencies = (
 			);
 			name = ApiDoc;
+			packageProductDependencies = (
+				D05E76DE2562EE0400583DF5 /* Swinject */,
+			);
 			productName = ApiDoc;
 			productReference = D09B27B12562DCF500145E3B /* ApiDoc.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +285,9 @@
 				Base,
 			);
 			mainGroup = D09B27A82562DCF500145E3B;
+			packageReferences = (
+				D05E76DD2562EE0400583DF5 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = D09B27B22562DCF500145E3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05E768F2562E38B00583DF5 /* Selfbuy.postman_collection.json in Resources */,
 				D09B27C12562DCF900145E3B /* LaunchScreen.storyboard in Resources */,
 				D09B27BE2562DCF900145E3B /* Preview Assets.xcassets in Resources */,
 				D09B27BB2562DCF900145E3B /* Assets.xcassets in Resources */,
@@ -145,9 +316,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05E76D82562EDCE00583DF5 /* HelperAssembly.swift in Sources */,
+				D05E76A82562E61E00583DF5 /* PostmanItem.swift in Sources */,
+				D05E76DB2562EDCE00583DF5 /* InjectedObservedObject.swift in Sources */,
+				D05E76A42562E55700583DF5 /* PostmanInfo.swift in Sources */,
+				D0D0E99D2563160B00CE224F /* ProjectViewModel.swift in Sources */,
+				D05E76AB2562E6CF00583DF5 /* PostmanRequest.swift in Sources */,
 				D09B27B52562DCF500145E3B /* AppDelegate.swift in Sources */,
+				D05E76B92562E92800583DF5 /* PostmanUrl.swift in Sources */,
+				D05E76EB2562F11800583DF5 /* ProjectListItemView.swift in Sources */,
+				D05E76B62562E87F00583DF5 /* PostmanBody.swift in Sources */,
+				D05E76C42562EC1A00583DF5 /* PostmanAuthType.swift in Sources */,
+				D05E76C72562EC5100583DF5 /* PostmanAuthBearer.swift in Sources */,
 				D09B27B72562DCF500145E3B /* SceneDelegate.swift in Sources */,
-				D09B27B92562DCF500145E3B /* ContentView.swift in Sources */,
+				D05E76DA2562EDCE00583DF5 /* DependencyProvider.swift in Sources */,
+				D05E76E72562EF6800583DF5 /* ProjectListViewModel.swift in Sources */,
+				D05E76F02562F2F800583DF5 /* ProjectListItemViewModel.swift in Sources */,
+				D05E76E32562EF4000583DF5 /* ProjectListView.swift in Sources */,
+				D05E76D92562EDCE00583DF5 /* Injected.swift in Sources */,
+				D05E769F2562E4DA00583DF5 /* PostmanJSONV2.swift in Sources */,
+				D05E769A2562E4BD00583DF5 /* PostmanService.swift in Sources */,
+				D05E76C12562EBCA00583DF5 /* PostmanAuth.swift in Sources */,
+				D09B27B92562DCF500145E3B /* ProjectView.swift in Sources */,
+				D05E76BC2562EB7000583DF5 /* PostmanVariable.swift in Sources */,
+				D05E76AE2562E70500583DF5 /* HTTPMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,17 +478,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ApiDoc/Preview Content\"";
-				DEVELOPMENT_TEAM = S4J5D3N22R;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"ApiDoc/Application/Supporting Files/Preview Content\"";
+				DEVELOPMENT_TEAM = 94FLWD5X32;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ApiDoc/Info.plist;
+				INFOPLIST_FILE = "ApiDoc/Application/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maxencemottard.api-documentation.ApiDoc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxencemottard.apidocumentation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.maxencemottard.apidocumentation";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,17 +502,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ApiDoc/Preview Content\"";
-				DEVELOPMENT_TEAM = S4J5D3N22R;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"ApiDoc/Application/Supporting Files/Preview Content\"";
+				DEVELOPMENT_TEAM = 94FLWD5X32;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ApiDoc/Info.plist;
+				INFOPLIST_FILE = "ApiDoc/Application/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maxencemottard.api-documentation.ApiDoc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxencemottard.apidocumentation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.maxencemottard.apidocumentation";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -345,6 +543,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D05E76DD2562EE0400583DF5 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D05E76DE2562EE0400583DF5 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D05E76DD2562EE0400583DF5 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D09B27A92562DCF500145E3B /* Project object */;
 }

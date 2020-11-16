@@ -7,15 +7,17 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ProjectView: View {
+    var viewModel: ProjectViewModel!
+    
     var body: some View {
-        Text("Hello, world!")
+        Text(viewModel.project.info.name)
             .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ProjectView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ProjectView()
     }
 }

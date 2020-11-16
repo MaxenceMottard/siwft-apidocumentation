@@ -13,6 +13,13 @@ final class ProjectListItemViewModel: ObservableObject {
     
     var project: PostmanJSONV2!
     
+    func displayName() -> String {
+        return project.info.name
+            .components(separatedBy: " ")
+            .prefix(2)
+            .reduce("") { "\($0)\($1.uppercased().first!)" }
+    }
+    
     func getProjectView() -> ProjectView {
         return dependencyProvider.resolve(ProjectView.self, argument: self.project!)!
     }

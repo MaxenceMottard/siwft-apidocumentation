@@ -22,7 +22,7 @@ final class ProjectListViewModel: ObservableObject {
             let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
             let decodedData = try jsonDecoder.decode(PostmanJSONV2.self, from: data)
             
-            projects = [decodedData]
+            projects = [decodedData, decodedData, decodedData]
         } catch let error {
             projects = []
             print(error)

@@ -13,11 +13,15 @@ struct ProjectListView: View {
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
-            VStack {
+            Text("Liste des projets")
+                .font(.title)
+                .bold()
+            
+            VStack(alignment: .center, spacing: 15) {
                 ForEach(viewModel.projects, id: \.info.postmanId) { project in
                     viewModel.getItem(project)
                 }
-            }
+            }.padding()
         }
     }
 }
@@ -25,5 +29,11 @@ struct ProjectListView: View {
 struct ProjectListView_Previews: PreviewProvider {
     static var previews: some View {
         ProjectListView()
+            .previewDisplayName("LightMode")
+        
+        ProjectListView()
+            .background(Color(.systemBackground))
+            .environment(\.colorScheme, .dark)
+            .previewDisplayName("Dark Mode")
     }
 }

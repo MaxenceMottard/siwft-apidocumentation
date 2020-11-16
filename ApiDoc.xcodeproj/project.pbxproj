@@ -36,6 +36,8 @@
 		D09B27BE2562DCF900145E3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09B27BD2562DCF900145E3B /* Preview Assets.xcassets */; };
 		D09B27C12562DCF900145E3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09B27BF2562DCF900145E3B /* LaunchScreen.storyboard */; };
 		D0D0E99D2563160B00CE224F /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0E99C2563160B00CE224F /* ProjectViewModel.swift */; };
+		D0D0E9A225631EF800CE224F /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0E9A125631EF800CE224F /* ColorExtensions.swift */; };
+		D0D0E9A6256329E400CE224F /* ProjectIconGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0E9A5256329E400CE224F /* ProjectIconGradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		D09B27C02562DCF900145E3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D09B27C22562DCF900145E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0D0E99C2563160B00CE224F /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
+		D0D0E9A125631EF800CE224F /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		D0D0E9A5256329E400CE224F /* ProjectIconGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectIconGradient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,7 @@
 		D05E76EE2562F2C500583DF5 /* Item */ = {
 			isa = PBXGroup;
 			children = (
+				D0D0E9A5256329E400CE224F /* ProjectIconGradient.swift */,
 				D05E76EA2562F11800583DF5 /* ProjectListItemView.swift */,
 				D05E76EF2562F2F800583DF5 /* ProjectListItemViewModel.swift */,
 			);
@@ -222,8 +227,9 @@
 		D09B27B32562DCF500145E3B /* ApiDoc */ = {
 			isa = PBXGroup;
 			children = (
-				D05E76D32562EDB300583DF5 /* DI */,
+				D0D0E99F25631ECB00CE224F /* Additions */,
 				D05E76912562E3A700583DF5 /* Application */,
+				D05E76D32562EDB300583DF5 /* DI */,
 				D05E769D2562E4C600583DF5 /* Models */,
 				D05E76982562E4A600583DF5 /* Services */,
 				D05E76942562E3FC00583DF5 /* Views */,
@@ -237,6 +243,22 @@
 				D09B27BD2562DCF900145E3B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0D0E99F25631ECB00CE224F /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				D0D0E9A025631EEC00CE224F /* Extensions */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		D0D0E9A025631EEC00CE224F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D0D0E9A125631EF800CE224F /* ColorExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D05E76D82562EDCE00583DF5 /* HelperAssembly.swift in Sources */,
+				D0D0E9A225631EF800CE224F /* ColorExtensions.swift in Sources */,
 				D05E76A82562E61E00583DF5 /* PostmanItem.swift in Sources */,
 				D05E76DB2562EDCE00583DF5 /* InjectedObservedObject.swift in Sources */,
 				D05E76A42562E55700583DF5 /* PostmanInfo.swift in Sources */,
@@ -333,6 +356,7 @@
 				D05E76E72562EF6800583DF5 /* ProjectListViewModel.swift in Sources */,
 				D05E76F02562F2F800583DF5 /* ProjectListItemViewModel.swift in Sources */,
 				D05E76E32562EF4000583DF5 /* ProjectListView.swift in Sources */,
+				D0D0E9A6256329E400CE224F /* ProjectIconGradient.swift in Sources */,
 				D05E76D92562EDCE00583DF5 /* Injected.swift in Sources */,
 				D05E769F2562E4DA00583DF5 /* PostmanJSONV2.swift in Sources */,
 				D05E769A2562E4BD00583DF5 /* PostmanService.swift in Sources */,

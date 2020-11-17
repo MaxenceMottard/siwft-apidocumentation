@@ -27,10 +27,14 @@ struct PostmanUrl: Decodable {
     func url() -> URL? {
         let urlProtocol = httpProtocol != nil ? "\(httpProtocol!)://" : ""
         let host = self.host.reduce("") { "\($0).\($1)" }
-        let path = self.path.reduce("") { "\($0)/\($1)" }
+        let path = endpoint()
         
         let url = urlProtocol + host + path
         
         return URL(string: url)!
+    }
+    
+    func endpoint() -> String {
+        return self.path.reduce("") { "\($0)/\($1)" }
     }
 }

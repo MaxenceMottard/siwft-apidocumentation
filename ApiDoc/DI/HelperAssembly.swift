@@ -51,6 +51,5 @@ class HelperAssembly: Assembly {
         
         
         //  Services
-        container.register(UserDefaultService.self) { _ in UserDefaultService() }
     }
 }

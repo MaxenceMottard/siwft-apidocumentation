@@ -10,25 +10,32 @@ import SwiftUI
 struct ProjectItemRequestView: View {
     let item: PostmanItem
     @State var detailIsPresented = false
-    @InjectedObservedObject var userDefault: UserDefaultService
+    @AppStorage("displayRequestEndpoint") var displayRequestEndpoint = false
     
     var body: some View {
         Button(action: {
             detailIsPresented = true
         }) {
             HStack {
-                Text("[\(item.request!.method.rawValue)]")
-                    .foregroundColor(.httmMethod(item.request!.method))
-                    .bold()
-                    .frame(width: 80, alignment: .center)
+//                Text("[\(item.request!.method.rawValue)]")
+//                    .foregroundColor(.httmMethod(item.request!.method))
+//                    .bold()
+//                    .frame(width: 80, alignment: .center)
                 
                 ProjectItemRequestMethodView(item.request!.method) {
-                    Text(item.name)
+                    VStack {
+                        Text(displayRequestEndpoint
+                                ? item.request!.url.endpoint()
+                                : item.name
+                        )
                         .bold()
+                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                    }
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                 .background(Color.textColor)
                 .cornerRadius(8.0)
+                .padding(.leading, 20)
                 .foregroundColor(.textColorInversed)
                 .shadow(radius: 3)
             }

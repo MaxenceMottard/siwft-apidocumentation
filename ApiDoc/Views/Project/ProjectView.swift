@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ProjectView: View {
     var viewModel: ProjectViewModel!
+    @AppStorage("displayRequestEndpoint") var displayRequestEndpoint = false
     
     var body: some View {
         ScrollView {
@@ -17,6 +19,10 @@ struct ProjectView: View {
                     .font(.title)
                     .bold()
                     .foregroundColor(.primaryColor)
+                
+                Toggle(isOn: $displayRequestEndpoint, label: {
+                    Text("Afficher les endpoints")
+                })
                 
                 ProjectItemListView(list: viewModel.project.item)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .top)

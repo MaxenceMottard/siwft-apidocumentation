@@ -29,6 +29,8 @@
 		D05E76E72562EF6800583DF5 /* ProjectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76E62562EF6800583DF5 /* ProjectListViewModel.swift */; };
 		D05E76EB2562F11800583DF5 /* ProjectListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76EA2562F11800583DF5 /* ProjectListItemView.swift */; };
 		D05E76F02562F2F800583DF5 /* ProjectListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76EF2562F2F800583DF5 /* ProjectListItemViewModel.swift */; };
+		D06F25E725634E420035D033 /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06F25E625634E420035D033 /* RequestView.swift */; };
+		D06F25EA25634FFE0035D033 /* UserDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06F25E925634FFE0035D033 /* UserDefaultService.swift */; };
 		D09B27B52562DCF500145E3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B27B42562DCF500145E3B /* AppDelegate.swift */; };
 		D09B27B72562DCF500145E3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B27B62562DCF500145E3B /* SceneDelegate.swift */; };
 		D09B27B92562DCF500145E3B /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B27B82562DCF500145E3B /* ProjectView.swift */; };
@@ -38,6 +40,10 @@
 		D0D0E99D2563160B00CE224F /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0E99C2563160B00CE224F /* ProjectViewModel.swift */; };
 		D0D0E9A225631EF800CE224F /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0E9A125631EF800CE224F /* ColorExtensions.swift */; };
 		D0D0E9A6256329E400CE224F /* ProjectIconGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0E9A5256329E400CE224F /* ProjectIconGradient.swift */; };
+		D0D0E9B02563370900CE224F /* ProjectItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0E9AF2563370900CE224F /* ProjectItemView.swift */; };
+		D0D0E9B3256337B500CE224F /* ProjectItemRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0E9B2256337B500CE224F /* ProjectItemRequestView.swift */; };
+		D0D0E9B62563388A00CE224F /* ProjectItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0E9B52563388A00CE224F /* ProjectItemListView.swift */; };
+		D0D0E9B92563418200CE224F /* ProjectItemRequestMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0E9B82563418200CE224F /* ProjectItemRequestMethodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +68,8 @@
 		D05E76E62562EF6800583DF5 /* ProjectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListViewModel.swift; sourceTree = "<group>"; };
 		D05E76EA2562F11800583DF5 /* ProjectListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListItemView.swift; sourceTree = "<group>"; };
 		D05E76EF2562F2F800583DF5 /* ProjectListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListItemViewModel.swift; sourceTree = "<group>"; };
+		D06F25E625634E420035D033 /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
+		D06F25E925634FFE0035D033 /* UserDefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultService.swift; sourceTree = "<group>"; };
 		D09B27B12562DCF500145E3B /* ApiDoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiDoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09B27B42562DCF500145E3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D09B27B62562DCF500145E3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +81,10 @@
 		D0D0E99C2563160B00CE224F /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
 		D0D0E9A125631EF800CE224F /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		D0D0E9A5256329E400CE224F /* ProjectIconGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectIconGradient.swift; sourceTree = "<group>"; };
+		D0D0E9AF2563370900CE224F /* ProjectItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItemView.swift; sourceTree = "<group>"; };
+		D0D0E9B2256337B500CE224F /* ProjectItemRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItemRequestView.swift; sourceTree = "<group>"; };
+		D0D0E9B52563388A00CE224F /* ProjectItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItemListView.swift; sourceTree = "<group>"; };
+		D0D0E9B82563418200CE224F /* ProjectItemRequestMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItemRequestMethodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +125,7 @@
 			children = (
 				D05E76E12562EF2E00583DF5 /* ProjectList */,
 				D05E76CA2562ECF100583DF5 /* Project */,
+				D06F25E525634E120035D033 /* Request */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				D05E76992562E4BD00583DF5 /* PostmanService.swift */,
+				D06F25E925634FFE0035D033 /* UserDefaultService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -170,6 +184,7 @@
 		D05E76CA2562ECF100583DF5 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				D0D0E9AA256336D800CE224F /* Components */,
 				D09B27B82562DCF500145E3B /* ProjectView.swift */,
 				D0D0E99C2563160B00CE224F /* ProjectViewModel.swift */,
 			);
@@ -205,6 +220,14 @@
 				D05E76EF2562F2F800583DF5 /* ProjectListItemViewModel.swift */,
 			);
 			path = Item;
+			sourceTree = "<group>";
+		};
+		D06F25E525634E120035D033 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D06F25E625634E420035D033 /* RequestView.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 		D09B27A82562DCF500145E3B = {
@@ -259,6 +282,17 @@
 				D0D0E9A125631EF800CE224F /* ColorExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D0D0E9AA256336D800CE224F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D0D0E9AF2563370900CE224F /* ProjectItemView.swift */,
+				D0D0E9B2256337B500CE224F /* ProjectItemRequestView.swift */,
+				D0D0E9B52563388A00CE224F /* ProjectItemListView.swift */,
+				D0D0E9B82563418200CE224F /* ProjectItemRequestMethodView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,12 +374,15 @@
 			files = (
 				D05E76D82562EDCE00583DF5 /* HelperAssembly.swift in Sources */,
 				D0D0E9A225631EF800CE224F /* ColorExtensions.swift in Sources */,
+				D0D0E9B3256337B500CE224F /* ProjectItemRequestView.swift in Sources */,
 				D05E76A82562E61E00583DF5 /* PostmanItem.swift in Sources */,
 				D05E76DB2562EDCE00583DF5 /* InjectedObservedObject.swift in Sources */,
 				D05E76A42562E55700583DF5 /* PostmanInfo.swift in Sources */,
 				D0D0E99D2563160B00CE224F /* ProjectViewModel.swift in Sources */,
 				D05E76AB2562E6CF00583DF5 /* PostmanRequest.swift in Sources */,
+				D06F25EA25634FFE0035D033 /* UserDefaultService.swift in Sources */,
 				D09B27B52562DCF500145E3B /* AppDelegate.swift in Sources */,
+				D06F25E725634E420035D033 /* RequestView.swift in Sources */,
 				D05E76B92562E92800583DF5 /* PostmanUrl.swift in Sources */,
 				D05E76EB2562F11800583DF5 /* ProjectListItemView.swift in Sources */,
 				D05E76B62562E87F00583DF5 /* PostmanBody.swift in Sources */,
@@ -356,13 +393,16 @@
 				D05E76E72562EF6800583DF5 /* ProjectListViewModel.swift in Sources */,
 				D05E76F02562F2F800583DF5 /* ProjectListItemViewModel.swift in Sources */,
 				D05E76E32562EF4000583DF5 /* ProjectListView.swift in Sources */,
+				D0D0E9B62563388A00CE224F /* ProjectItemListView.swift in Sources */,
 				D0D0E9A6256329E400CE224F /* ProjectIconGradient.swift in Sources */,
 				D05E76D92562EDCE00583DF5 /* Injected.swift in Sources */,
+				D0D0E9B02563370900CE224F /* ProjectItemView.swift in Sources */,
 				D05E769F2562E4DA00583DF5 /* PostmanJSONV2.swift in Sources */,
 				D05E769A2562E4BD00583DF5 /* PostmanService.swift in Sources */,
 				D05E76C12562EBCA00583DF5 /* PostmanAuth.swift in Sources */,
 				D09B27B92562DCF500145E3B /* ProjectView.swift in Sources */,
 				D05E76BC2562EB7000583DF5 /* PostmanVariable.swift in Sources */,
+				D0D0E9B92563418200CE224F /* ProjectItemRequestMethodView.swift in Sources */,
 				D05E76AE2562E70500583DF5 /* HTTPMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

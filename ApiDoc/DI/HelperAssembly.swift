@@ -14,8 +14,9 @@ class HelperAssembly: Assembly {
         //  Foundation
         container.register(JSONDecoder.self) { _ in JSONDecoder() }
         container.register(JSONEncoder.self) { _ in JSONEncoder() }
+        container.register(UserDefaults.self) { _ in UserDefaults.standard }
         
-        
+    
         //  Views
         container.register(ProjectListView.self) { _ in ProjectListView() }
         container.register(ProjectListViewModel.self) { _ in ProjectListViewModel() }
@@ -50,5 +51,6 @@ class HelperAssembly: Assembly {
         
         
         //  Services
+        container.register(UserDefaultService.self) { _ in UserDefaultService() }
     }
 }

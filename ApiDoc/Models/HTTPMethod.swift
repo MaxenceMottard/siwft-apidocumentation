@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum HTTPMethod: String, Decodable {
+enum HTTPMethod: String, Decodable, CaseIterable {
     case POST, GET, PUT, DELETE
 }

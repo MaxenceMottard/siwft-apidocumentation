@@ -8,9 +8,9 @@
 import Foundation
 
 struct PostmanVariable: Decodable {
-    let id: String?
+    var id: String? = nil
     let key: String
     let value: String
-    let disabled: Bool?
-    let type: String?
+    var disabled: Bool? = nil
+    var type: String? = nil
 }

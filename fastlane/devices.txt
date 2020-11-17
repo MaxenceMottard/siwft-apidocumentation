@@ -1,2 +1,0 @@
-Device ID	Device Name	Device Platform
-EXAMPLE-UUID-192I3J109D1	iPhoneName	ios

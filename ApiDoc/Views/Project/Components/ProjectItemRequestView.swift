@@ -16,29 +16,27 @@ struct ProjectItemRequestView: View {
         Button(action: {
             detailIsPresented = true
         }) {
-            HStack {
-//                Text("[\(item.request!.method.rawValue)]")
-//                    .foregroundColor(.httmMethod(item.request!.method))
-//                    .bold()
-//                    .frame(width: 80, alignment: .center)
-                
-                ProjectItemRequestMethodView(item.request!.method) {
-                    VStack {
-                        Text(displayRequestEndpoint
-                                ? item.request!.url.endpoint()
-                                : item.name
-                        )
+            ProjectItemRequestMethodView(item.request!.method) {
+                VStack {
+                    Text("[\(item.request!.method.rawValue)]")
                         .bold()
+                        .font(.caption)
                         .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                    }
+                    
+                    Text(displayRequestEndpoint
+                            ? item.request!.url.endpoint()
+                            : item.name
+                    )
+                    .bold()
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                 }
-                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                .background(Color.textColor)
-                .cornerRadius(8.0)
-                .padding(.leading, 20)
-                .foregroundColor(.textColorInversed)
-                .shadow(radius: 3)
             }
+            .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+            .background(Color.textColor)
+            .cornerRadius(8.0)
+            .padding(.leading, 20)
+            .foregroundColor(.textColorInversed)
+            .shadow(radius: 3)
         }.sheet(isPresented: $detailIsPresented) {
             RequestView(requestItem: item)
         }

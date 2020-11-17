@@ -18,7 +18,7 @@ final class ProjectListViewModel: ObservableObject {
     
     func fetchData() {
         do {
-            let path = Bundle.main.path(forResource: "Selfbuy.postman_collection", ofType: "json")!
+            let path = Bundle.main.path(forResource: "RandoAPI.postman_collection", ofType: "json")!
             let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
             let decodedData = try jsonDecoder.decode(PostmanJSONV2.self, from: data)
             

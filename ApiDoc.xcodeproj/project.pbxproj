@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D00A85162563C2E2001312B5 /* Weakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A85152563C2E2001312B5 /* Weakify.swift */; };
-		D05E768F2562E38B00583DF5 /* Selfbuy.postman_collection.json in Resources */ = {isa = PBXBuildFile; fileRef = D05E768E2562E38B00583DF5 /* Selfbuy.postman_collection.json */; };
+		D00A851D2563CFE2001312B5 /* RandoAPI.postman_collection.json in Resources */ = {isa = PBXBuildFile; fileRef = D00A851C2563CFE2001312B5 /* RandoAPI.postman_collection.json */; };
 		D05E769A2562E4BD00583DF5 /* PostmanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76992562E4BD00583DF5 /* PostmanService.swift */; };
 		D05E769F2562E4DA00583DF5 /* PostmanJSONV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E769E2562E4DA00583DF5 /* PostmanJSONV2.swift */; };
 		D05E76A42562E55700583DF5 /* PostmanInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76A32562E55700583DF5 /* PostmanInfo.swift */; };
@@ -48,7 +48,7 @@
 
 /* Begin PBXFileReference section */
 		D00A85152563C2E2001312B5 /* Weakify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weakify.swift; sourceTree = "<group>"; };
-		D05E768E2562E38B00583DF5 /* Selfbuy.postman_collection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Selfbuy.postman_collection.json; sourceTree = "<group>"; };
+		D00A851C2563CFE2001312B5 /* RandoAPI.postman_collection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RandoAPI.postman_collection.json; sourceTree = "<group>"; };
 		D05E76992562E4BD00583DF5 /* PostmanService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanService.swift; sourceTree = "<group>"; };
 		D05E769E2562E4DA00583DF5 /* PostmanJSONV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanJSONV2.swift; sourceTree = "<group>"; };
 		D05E76A32562E55700583DF5 /* PostmanInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanInfo.swift; sourceTree = "<group>"; };
@@ -240,7 +240,7 @@
 		D09B27A82562DCF500145E3B = {
 			isa = PBXGroup;
 			children = (
-				D05E768E2562E38B00583DF5 /* Selfbuy.postman_collection.json */,
+				D00A851C2563CFE2001312B5 /* RandoAPI.postman_collection.json */,
 				D09B27B32562DCF500145E3B /* ApiDoc */,
 				D09B27B22562DCF500145E3B /* Products */,
 			);
@@ -366,8 +366,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D05E768F2562E38B00583DF5 /* Selfbuy.postman_collection.json in Resources */,
 				D09B27C12562DCF900145E3B /* LaunchScreen.storyboard in Resources */,
+				D00A851D2563CFE2001312B5 /* RandoAPI.postman_collection.json in Resources */,
 				D09B27BE2562DCF900145E3B /* Preview Assets.xcassets in Resources */,
 				D09B27BB2562DCF900145E3B /* Assets.xcassets in Resources */,
 			);

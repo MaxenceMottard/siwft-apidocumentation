@@ -95,12 +95,24 @@ struct ProjectItemView_Previews: PreviewProvider {
                 .padding()
                 .previewDisplayName("Light Mode")
             
+            ProjectItemView(item: projectItem, dropDropwIsExpanded: true)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .padding()
+                .previewDisplayName("Light Mode Expanded")
+            
             ProjectItemView(item: projectItem)
                 .previewLayout(PreviewLayout.sizeThatFits)
                 .padding()
                 .background(Color(.systemBackground))
                 .environment(\.colorScheme, .dark)
                 .previewDisplayName("Dark Mode")
+            
+            ProjectItemView(item: projectItem, dropDropwIsExpanded: true)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .padding()
+                .background(Color(.systemBackground))
+                .environment(\.colorScheme, .dark)
+                .previewDisplayName("Dark Mode Expanded")
         }
     }
 }

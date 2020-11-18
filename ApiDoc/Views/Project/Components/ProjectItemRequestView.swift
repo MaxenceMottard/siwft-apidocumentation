@@ -61,11 +61,32 @@ struct ProjectItemRequestView_Previews: PreviewProvider {
             )
         )
         
+        let request2 = PostmanItem(
+            name: "My Second Request",
+            item: nil,
+            request: PostmanRequest(
+                method: .POST, header: [],
+                body: PostmanBody(mode: .raw, raw: "", urlencoded: nil),
+                url: PostmanUrl(
+                    raw: "https://google.com/search?q=Test",
+                    host: ["google", "com"], path: ["search"], httpProtocol: "https",
+                    query: [PostmanVariable(key: "q", value: "Test")],
+                    variable: nil
+                )
+            )
+        )
+        
         return Group {
+            
+            ProjectItemRequestView(item: request2)
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .padding()
+                .previewDisplayName("Light Mode [POST] Request")
+            
             ProjectItemRequestView(item: request)
                 .previewLayout(PreviewLayout.sizeThatFits)
                 .padding()
-                .previewDisplayName("Light Mode")
+                .previewDisplayName("Light Mode [GET] Request")
             
             ProjectItemRequestView(item: request)
                 .previewLayout(PreviewLayout.sizeThatFits)

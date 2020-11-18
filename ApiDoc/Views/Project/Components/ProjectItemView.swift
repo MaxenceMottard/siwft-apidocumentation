@@ -47,9 +47,10 @@ struct ProjectItemView: View {
                 .shadow(radius: 3)
             }, expandedView: {
                 ProjectItemListView(list: item.item!)
+                    .padding(.bottom, 15)
             }, isExpanded: $dropDropwIsExpanded)
             .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-            .padding(.vertical, 20)
+            .padding(.vertical, 5)
         }
     }
 }

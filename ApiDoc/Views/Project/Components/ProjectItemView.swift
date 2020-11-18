@@ -9,12 +9,13 @@ import SwiftUI
 
 struct ProjectItemView: View {
     let item: PostmanItem
+    @State var dropDropwIsExpanded: Bool = false
     
     var body: some View {
         if let _ = item.request {
             ProjectItemRequestView(item: item)
         } else {
-            VStack {
+            DropDown({
                 HStack {
                     Image(systemName: "folder.fill")
                         .font(.system(size: 20.0))
@@ -36,6 +37,7 @@ struct ProjectItemView: View {
                     Image(systemName: "arrowtriangle.down.fill")
                         .font(.system(size: 20.0))
                         .foregroundColor(.primaryColor)
+                        .rotationEffect(.degrees(dropDropwIsExpanded ? 0 : 180))
                 }
                 .padding(10)
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
@@ -43,9 +45,9 @@ struct ProjectItemView: View {
                 .foregroundColor(.textColorInversed)
                 .cornerRadius(8.0)
                 .shadow(radius: 3)
-                
+            }, expandedView: {
                 ProjectItemListView(list: item.item!)
-            }
+            }, isExpanded: $dropDropwIsExpanded)
             .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             .padding(.vertical, 20)
         }

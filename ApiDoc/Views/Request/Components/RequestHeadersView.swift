@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct RequestHeaders: View {
+struct RequestHeadersView: View {
     let header: [PostmanVariable]
+    @Injected var postmanService: PostmanService
     
     var body: some View {
         VStack {
@@ -47,14 +48,14 @@ struct RequestHeaders: View {
     }
 }
 
-struct RequestHeaders_Previews: PreviewProvider {
+struct RequestHeadersView_Previews: PreviewProvider {
     static var previews: some View {
         let header = [
             PostmanVariable(key: "Authorization", value: "Your key"),
             PostmanVariable(key: "Content-Type", value: "application/json"),
         ]
         
-        RequestHeaders(header: header)
+        RequestHeadersView(header: header)
             .previewLayout(PreviewLayout.sizeThatFits)
         
     }

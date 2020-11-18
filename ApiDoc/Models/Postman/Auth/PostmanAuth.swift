@@ -9,5 +9,5 @@ import Foundation
 
 struct PostmanAuth: Decodable {
     let type: PostmanAuthType
-    let bearer: [PostmanAuthBearer]
+    let bearer: [PostmanVariable]
 }

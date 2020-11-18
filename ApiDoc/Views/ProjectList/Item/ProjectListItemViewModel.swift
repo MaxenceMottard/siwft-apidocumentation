@@ -10,6 +10,7 @@ import SwiftUI
 
 final class ProjectListItemViewModel: ObservableObject {
     @Injected var dependencyProvider: DependencyProvider
+    @Injected var postmanService: PostmanService
     
     var project: PostmanJSONV2!
     
@@ -22,5 +23,9 @@ final class ProjectListItemViewModel: ObservableObject {
     
     func getProjectView() -> ProjectView {
         return dependencyProvider.resolve(ProjectView.self, argument: self.project!)!
+    }
+    
+    func openProject() {
+        postmanService.setCurrentPorject(project)
     }
 }

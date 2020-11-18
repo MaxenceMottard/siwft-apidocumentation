@@ -24,7 +24,7 @@ struct RequestView: View {
                             .padding()
                         
                         //  MARK: Headers
-                        RequestHeaders(header: requestItem.request!.header)
+                        RequestHeadersView(header: requestItem.request!.header)
                             .padding()
                     }
                 }

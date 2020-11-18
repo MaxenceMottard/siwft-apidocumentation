@@ -17,6 +17,7 @@ struct ProjectListItemView: View {
     var body: some View {
         Button(action: {
             projectViewIsPresented = true
+            viewModel.openProject()
         }) {
             HStack {
                 ProjectIconGradient {

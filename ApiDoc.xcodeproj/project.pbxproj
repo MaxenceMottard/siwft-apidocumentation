@@ -13,7 +13,7 @@
 		D00A852925652A3C001312B5 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A852825652A3C001312B5 /* ViewExtensions.swift */; };
 		D00A852C25652BC9001312B5 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A852B25652BC9001312B5 /* TextExtensions.swift */; };
 		D00A853825654689001312B5 /* RequestRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A853725654689001312B5 /* RequestRowView.swift */; };
-		D00A853B25654B28001312B5 /* RequestHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A853A25654B28001312B5 /* RequestHeaders.swift */; };
+		D00A853B25654B28001312B5 /* RequestHeadersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A853A25654B28001312B5 /* RequestHeadersView.swift */; };
 		D00A853F25654BA9001312B5 /* RequestURLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A853E25654BA9001312B5 /* RequestURLView.swift */; };
 		D00A854225654D3B001312B5 /* RequestMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A854125654D3B001312B5 /* RequestMethodView.swift */; };
 		D05E769A2562E4BD00583DF5 /* PostmanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76992562E4BD00583DF5 /* PostmanService.swift */; };
@@ -27,7 +27,6 @@
 		D05E76BC2562EB7000583DF5 /* PostmanVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76BB2562EB7000583DF5 /* PostmanVariable.swift */; };
 		D05E76C12562EBCA00583DF5 /* PostmanAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76C02562EBCA00583DF5 /* PostmanAuth.swift */; };
 		D05E76C42562EC1A00583DF5 /* PostmanAuthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76C32562EC1A00583DF5 /* PostmanAuthType.swift */; };
-		D05E76C72562EC5100583DF5 /* PostmanAuthBearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76C62562EC5100583DF5 /* PostmanAuthBearer.swift */; };
 		D05E76D82562EDCE00583DF5 /* HelperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76D42562EDCE00583DF5 /* HelperAssembly.swift */; };
 		D05E76D92562EDCE00583DF5 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76D52562EDCE00583DF5 /* Injected.swift */; };
 		D05E76DA2562EDCE00583DF5 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76D62562EDCE00583DF5 /* DependencyProvider.swift */; };
@@ -51,6 +50,7 @@
 		D0D0E9B3256337B500CE224F /* ProjectItemRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0E9B2256337B500CE224F /* ProjectItemRequestView.swift */; };
 		D0D0E9B62563388A00CE224F /* ProjectItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0E9B52563388A00CE224F /* ProjectItemListView.swift */; };
 		D0D0E9B92563418200CE224F /* ProjectItemRequestMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0E9B82563418200CE224F /* ProjectItemRequestMethodView.swift */; };
+		D0EB4F7E2565826A001086B4 /* RequestHeadersAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB4F7D2565826A001086B4 /* RequestHeadersAuthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,7 +60,7 @@
 		D00A852825652A3C001312B5 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		D00A852B25652BC9001312B5 /* TextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtensions.swift; sourceTree = "<group>"; };
 		D00A853725654689001312B5 /* RequestRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRowView.swift; sourceTree = "<group>"; };
-		D00A853A25654B28001312B5 /* RequestHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHeaders.swift; sourceTree = "<group>"; };
+		D00A853A25654B28001312B5 /* RequestHeadersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHeadersView.swift; sourceTree = "<group>"; };
 		D00A853E25654BA9001312B5 /* RequestURLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestURLView.swift; sourceTree = "<group>"; };
 		D00A854125654D3B001312B5 /* RequestMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethodView.swift; sourceTree = "<group>"; };
 		D05E76992562E4BD00583DF5 /* PostmanService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanService.swift; sourceTree = "<group>"; };
@@ -74,7 +74,6 @@
 		D05E76BB2562EB7000583DF5 /* PostmanVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanVariable.swift; sourceTree = "<group>"; };
 		D05E76C02562EBCA00583DF5 /* PostmanAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanAuth.swift; sourceTree = "<group>"; };
 		D05E76C32562EC1A00583DF5 /* PostmanAuthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanAuthType.swift; sourceTree = "<group>"; };
-		D05E76C62562EC5100583DF5 /* PostmanAuthBearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanAuthBearer.swift; sourceTree = "<group>"; };
 		D05E76D42562EDCE00583DF5 /* HelperAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAssembly.swift; sourceTree = "<group>"; };
 		D05E76D52562EDCE00583DF5 /* Injected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 		D05E76D62562EDCE00583DF5 /* DependencyProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
@@ -99,6 +98,7 @@
 		D0D0E9B2256337B500CE224F /* ProjectItemRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItemRequestView.swift; sourceTree = "<group>"; };
 		D0D0E9B52563388A00CE224F /* ProjectItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItemListView.swift; sourceTree = "<group>"; };
 		D0D0E9B82563418200CE224F /* ProjectItemRequestMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItemRequestMethodView.swift; sourceTree = "<group>"; };
+		D0EB4F7D2565826A001086B4 /* RequestHeadersAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RequestHeadersAuthView.swift; path = ../../../../../../../../RequestHeadersAuthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,9 +133,10 @@
 			isa = PBXGroup;
 			children = (
 				D00A853D25654B93001312B5 /* Reusables */,
-				D00A853A25654B28001312B5 /* RequestHeaders.swift */,
+				D00A853A25654B28001312B5 /* RequestHeadersView.swift */,
 				D00A853E25654BA9001312B5 /* RequestURLView.swift */,
 				D00A854125654D3B001312B5 /* RequestMethodView.swift */,
+				D0EB4F7D2565826A001086B4 /* RequestHeadersAuthView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -224,7 +225,6 @@
 			children = (
 				D05E76C02562EBCA00583DF5 /* PostmanAuth.swift */,
 				D05E76C32562EC1A00583DF5 /* PostmanAuthType.swift */,
-				D05E76C62562EC5100583DF5 /* PostmanAuthBearer.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -442,7 +442,6 @@
 				D05E76B62562E87F00583DF5 /* PostmanBody.swift in Sources */,
 				D05E76C42562EC1A00583DF5 /* PostmanAuthType.swift in Sources */,
 				D00A853825654689001312B5 /* RequestRowView.swift in Sources */,
-				D05E76C72562EC5100583DF5 /* PostmanAuthBearer.swift in Sources */,
 				D09B27B72562DCF500145E3B /* SceneDelegate.swift in Sources */,
 				D00A85162563C2E2001312B5 /* Weakify.swift in Sources */,
 				D05E76DA2562EDCE00583DF5 /* DependencyProvider.swift in Sources */,
@@ -457,13 +456,14 @@
 				D0D0E9B02563370900CE224F /* ProjectItemView.swift in Sources */,
 				D05E769F2562E4DA00583DF5 /* PostmanJSONV2.swift in Sources */,
 				D05E769A2562E4BD00583DF5 /* PostmanService.swift in Sources */,
-				D00A853B25654B28001312B5 /* RequestHeaders.swift in Sources */,
+				D00A853B25654B28001312B5 /* RequestHeadersView.swift in Sources */,
 				D05E76C12562EBCA00583DF5 /* PostmanAuth.swift in Sources */,
 				D09B27B92562DCF500145E3B /* ProjectView.swift in Sources */,
 				D00A854225654D3B001312B5 /* RequestMethodView.swift in Sources */,
 				D05E76BC2562EB7000583DF5 /* PostmanVariable.swift in Sources */,
 				D0D0E9B92563418200CE224F /* ProjectItemRequestMethodView.swift in Sources */,
 				D05E76AE2562E70500583DF5 /* HTTPMethod.swift in Sources */,
+				D0EB4F7E2565826A001086B4 /* RequestHeadersAuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

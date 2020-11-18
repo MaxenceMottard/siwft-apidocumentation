@@ -51,5 +51,6 @@ class HelperAssembly: Assembly {
         
         
         //  Services
+        container.register(PostmanService.self) { _ in PostmanService() }
     }
 }

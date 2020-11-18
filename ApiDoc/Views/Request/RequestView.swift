@@ -11,7 +11,24 @@ struct RequestView: View {
     let requestItem: PostmanItem
     
     var body: some View {
-        Text(requestItem.name)
+        GeometryReader { geo in
+            VStack {
+                ScrollView {
+                    VStack {
+                        Spacer()
+                    }
+                }
+                
+                VStack (alignment: .leading) {
+                    Text(requestItem.name)
+                }
+                .padding()
+                .padding(.bottom, geo.safeAreaInsets.bottom)
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .background(Color.httmMethod(requestItem.request!.method))
+            }
+            .edgesIgnoringSafeArea(.all)
+        }
     }
 }
 
@@ -34,12 +51,12 @@ struct RequestView_Previews: PreviewProvider {
         
         return Group {
             RequestView(requestItem: request)
-                .padding()
+                .edgesIgnoringSafeArea(.all)
                 .previewDisplayName("Light Mode")
             
             RequestView(requestItem: request)
-                .padding()
                 .background(Color(.systemBackground))
+                .edgesIgnoringSafeArea(.all)
                 .environment(\.colorScheme, .dark)
                 .previewDisplayName("Dark Mode")
         }

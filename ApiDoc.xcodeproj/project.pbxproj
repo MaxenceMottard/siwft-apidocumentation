@@ -31,7 +31,7 @@
 		D05E76D92562EDCE00583DF5 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76D52562EDCE00583DF5 /* Injected.swift */; };
 		D05E76DA2562EDCE00583DF5 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76D62562EDCE00583DF5 /* DependencyProvider.swift */; };
 		D05E76DB2562EDCE00583DF5 /* InjectedObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76D72562EDCE00583DF5 /* InjectedObservedObject.swift */; };
-		D05E76DF2562EE0400583DF5 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = D05E76DE2562EE0400583DF5 /* Swinject */; };
+		D05E76DF2562EE0400583DF5 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D05E76DE2562EE0400583DF5 /* SwiftPackageProductDependency */; };
 		D05E76E32562EF4000583DF5 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76E22562EF4000583DF5 /* ProjectListView.swift */; };
 		D05E76E72562EF6800583DF5 /* ProjectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76E62562EF6800583DF5 /* ProjectListViewModel.swift */; };
 		D05E76EB2562F11800583DF5 /* ProjectListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76EA2562F11800583DF5 /* ProjectListItemView.swift */; };
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D05E76DF2562EE0400583DF5 /* Swinject in Frameworks */,
+				D05E76DF2562EE0400583DF5 /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +365,7 @@
 			);
 			name = ApiDoc;
 			packageProductDependencies = (
-				D05E76DE2562EE0400583DF5 /* Swinject */,
+				D05E76DE2562EE0400583DF5 /* SwiftPackageProductDependency */,
 			);
 			productName = ApiDoc;
 			productReference = D09B27B12562DCF500145E3B /* ApiDoc.app */;
@@ -395,7 +395,7 @@
 			);
 			mainGroup = D09B27A82562DCF500145E3B;
 			packageReferences = (
-				D05E76DD2562EE0400583DF5 /* XCRemoteSwiftPackageReference "Swinject" */,
+				D05E76DD2562EE0400583DF5 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = D09B27B22562DCF500145E3B /* Products */;
 			projectDirPath = "";
@@ -669,7 +669,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D05E76DD2562EE0400583DF5 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+		D05E76DD2562EE0400583DF5 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject.git";
 			requirement = {
@@ -680,9 +680,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D05E76DE2562EE0400583DF5 /* Swinject */ = {
+		D05E76DE2562EE0400583DF5 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D05E76DD2562EE0400583DF5 /* XCRemoteSwiftPackageReference "Swinject" */;
+			package = D05E76DD2562EE0400583DF5 /* RemoteSwiftPackageReference */;
 			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */

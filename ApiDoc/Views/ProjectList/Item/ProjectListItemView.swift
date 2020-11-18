@@ -38,7 +38,7 @@ struct ProjectListItemView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 .padding()
-                .frame(minWidth: 0, maxWidth: .infinity)
+                .fullWidth()
                 
                 Spacer()
             }
@@ -47,7 +47,7 @@ struct ProjectListItemView: View {
             .frame(height: buttonHeight)
             .background(Color.textColor)
             .cornerRadius(8.0)
-            .frame(minWidth: 0, maxWidth: .infinity, alignment: .topLeading)
+            .fullWidth(.topLeading)
             .shadow(radius: 3)
 
         }.sheet(isPresented: $projectViewIsPresented) {

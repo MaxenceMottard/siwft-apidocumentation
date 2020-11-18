@@ -19,7 +19,7 @@ struct ProjectItemRequestMethodView<C: View> : View {
     var body: some View {
         VStack {
             childView
-                .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                .fullWidth()
                 .padding()
                 .background(Color.httmMethod(method))
                 .foregroundColor(.white)

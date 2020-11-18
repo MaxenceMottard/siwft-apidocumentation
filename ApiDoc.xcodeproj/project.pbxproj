@@ -10,6 +10,8 @@
 		D00A85162563C2E2001312B5 /* Weakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A85152563C2E2001312B5 /* Weakify.swift */; };
 		D00A851D2563CFE2001312B5 /* RandoAPI.postman_collection.json in Resources */ = {isa = PBXBuildFile; fileRef = D00A851C2563CFE2001312B5 /* RandoAPI.postman_collection.json */; };
 		D00A8525256512C4001312B5 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A8524256512C4001312B5 /* DropDown.swift */; };
+		D00A852925652A3C001312B5 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A852825652A3C001312B5 /* ViewExtensions.swift */; };
+		D00A852C25652BC9001312B5 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A852B25652BC9001312B5 /* TextExtensions.swift */; };
 		D05E769A2562E4BD00583DF5 /* PostmanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76992562E4BD00583DF5 /* PostmanService.swift */; };
 		D05E769F2562E4DA00583DF5 /* PostmanJSONV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E769E2562E4DA00583DF5 /* PostmanJSONV2.swift */; };
 		D05E76A42562E55700583DF5 /* PostmanInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76A32562E55700583DF5 /* PostmanInfo.swift */; };
@@ -26,7 +28,7 @@
 		D05E76D92562EDCE00583DF5 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76D52562EDCE00583DF5 /* Injected.swift */; };
 		D05E76DA2562EDCE00583DF5 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76D62562EDCE00583DF5 /* DependencyProvider.swift */; };
 		D05E76DB2562EDCE00583DF5 /* InjectedObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76D72562EDCE00583DF5 /* InjectedObservedObject.swift */; };
-		D05E76DF2562EE0400583DF5 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D05E76DE2562EE0400583DF5 /* SwiftPackageProductDependency */; };
+		D05E76DF2562EE0400583DF5 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = D05E76DE2562EE0400583DF5 /* Swinject */; };
 		D05E76E32562EF4000583DF5 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76E22562EF4000583DF5 /* ProjectListView.swift */; };
 		D05E76E72562EF6800583DF5 /* ProjectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76E62562EF6800583DF5 /* ProjectListViewModel.swift */; };
 		D05E76EB2562F11800583DF5 /* ProjectListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E76EA2562F11800583DF5 /* ProjectListItemView.swift */; };
@@ -51,6 +53,8 @@
 		D00A85152563C2E2001312B5 /* Weakify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weakify.swift; sourceTree = "<group>"; };
 		D00A851C2563CFE2001312B5 /* RandoAPI.postman_collection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RandoAPI.postman_collection.json; sourceTree = "<group>"; };
 		D00A8524256512C4001312B5 /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		D00A852825652A3C001312B5 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		D00A852B25652BC9001312B5 /* TextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtensions.swift; sourceTree = "<group>"; };
 		D05E76992562E4BD00583DF5 /* PostmanService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanService.swift; sourceTree = "<group>"; };
 		D05E769E2562E4DA00583DF5 /* PostmanJSONV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanJSONV2.swift; sourceTree = "<group>"; };
 		D05E76A32562E55700583DF5 /* PostmanInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanInfo.swift; sourceTree = "<group>"; };
@@ -94,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D05E76DF2562EE0400583DF5 /* BuildFile in Frameworks */,
+				D05E76DF2562EE0400583DF5 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,8 @@
 			isa = PBXGroup;
 			children = (
 				D0D0E9A125631EF800CE224F /* ColorExtensions.swift */,
+				D00A852825652A3C001312B5 /* ViewExtensions.swift */,
+				D00A852B25652BC9001312B5 /* TextExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -331,7 +337,7 @@
 			);
 			name = ApiDoc;
 			packageProductDependencies = (
-				D05E76DE2562EE0400583DF5 /* SwiftPackageProductDependency */,
+				D05E76DE2562EE0400583DF5 /* Swinject */,
 			);
 			productName = ApiDoc;
 			productReference = D09B27B12562DCF500145E3B /* ApiDoc.app */;
@@ -361,7 +367,7 @@
 			);
 			mainGroup = D09B27A82562DCF500145E3B;
 			packageReferences = (
-				D05E76DD2562EE0400583DF5 /* RemoteSwiftPackageReference */,
+				D05E76DD2562EE0400583DF5 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = D09B27B22562DCF500145E3B /* Products */;
 			projectDirPath = "";
@@ -403,6 +409,7 @@
 				D06F25E725634E420035D033 /* RequestView.swift in Sources */,
 				D05E76B92562E92800583DF5 /* PostmanUrl.swift in Sources */,
 				D05E76EB2562F11800583DF5 /* ProjectListItemView.swift in Sources */,
+				D00A852925652A3C001312B5 /* ViewExtensions.swift in Sources */,
 				D05E76B62562E87F00583DF5 /* PostmanBody.swift in Sources */,
 				D05E76C42562EC1A00583DF5 /* PostmanAuthType.swift in Sources */,
 				D05E76C72562EC5100583DF5 /* PostmanAuthBearer.swift in Sources */,
@@ -414,6 +421,7 @@
 				D00A8525256512C4001312B5 /* DropDown.swift in Sources */,
 				D05E76E32562EF4000583DF5 /* ProjectListView.swift in Sources */,
 				D0D0E9B62563388A00CE224F /* ProjectItemListView.swift in Sources */,
+				D00A852C25652BC9001312B5 /* TextExtensions.swift in Sources */,
 				D0D0E9A6256329E400CE224F /* ProjectIconGradient.swift in Sources */,
 				D05E76D92562EDCE00583DF5 /* Injected.swift in Sources */,
 				D0D0E9B02563370900CE224F /* ProjectItemView.swift in Sources */,
@@ -629,7 +637,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D05E76DD2562EE0400583DF5 /* RemoteSwiftPackageReference */ = {
+		D05E76DD2562EE0400583DF5 /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject.git";
 			requirement = {
@@ -640,9 +648,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D05E76DE2562EE0400583DF5 /* SwiftPackageProductDependency */ = {
+		D05E76DE2562EE0400583DF5 /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D05E76DD2562EE0400583DF5 /* RemoteSwiftPackageReference */;
+			package = D05E76DD2562EE0400583DF5 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */

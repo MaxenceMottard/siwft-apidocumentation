@@ -21,17 +21,17 @@ struct ProjectItemRequestView: View {
                     Text("[\(item.request!.method.rawValue)]")
                         .bold()
                         .font(.caption)
-                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                        .fullWidth()
                     
                     Text(displayRequestEndpoint
                             ? item.request!.url.endpoint()
                             : item.name
                     )
                     .bold()
-                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                    .fullWidth()
                 }
             }
-            .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+            .fullWidth(.leading)
             .background(Color.textColor)
             .cornerRadius(8.0)
             .padding(.leading, 20)

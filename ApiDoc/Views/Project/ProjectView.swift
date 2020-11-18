@@ -25,9 +25,9 @@ struct ProjectView: View {
                 })
                 
                 ProjectItemListView(list: viewModel.project.item)
-                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .top)
+                    .fullWidth(.top)
             }
-            .frame(minWidth: 0, maxWidth: .infinity, alignment: .top)
+            .fullWidth(.top)
             .padding()
             .padding(.top, 20)
         }

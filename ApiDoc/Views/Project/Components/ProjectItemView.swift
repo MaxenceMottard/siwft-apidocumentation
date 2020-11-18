@@ -25,10 +25,10 @@ struct ProjectItemView: View {
                         Text(item.name)
                             .bold()
                             .font(.title3)
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .fullWidth()
                         
                         Text("\(item.numberOfRequests()) requêtes")
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .fullWidth()
                     }
                     .padding(.leading, 15)
                     
@@ -40,7 +40,7 @@ struct ProjectItemView: View {
                         .rotationEffect(.degrees(dropDropwIsExpanded ? 0 : 180))
                 }
                 .padding(10)
-                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                .fullWidth()
                 .background(Color.textColor)
                 .foregroundColor(.textColorInversed)
                 .cornerRadius(8.0)
@@ -49,7 +49,7 @@ struct ProjectItemView: View {
                 ProjectItemListView(list: item.item!)
                     .padding(.bottom, 15)
             }, isExpanded: $dropDropwIsExpanded)
-            .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+            .fullWidth()
             .padding(.vertical, 5)
         }
     }

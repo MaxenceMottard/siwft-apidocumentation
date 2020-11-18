@@ -26,7 +26,8 @@ struct ProjectIconGradient<C: View> : View {
             )
             
             childView
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                .fullWidth()
+                .fullHeight()
         }
     }
 }

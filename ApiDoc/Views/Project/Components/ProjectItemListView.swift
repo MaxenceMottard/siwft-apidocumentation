@@ -14,7 +14,7 @@ struct ProjectItemListView: View {
         VStack {
             ForEach(list, id: \.name) { item in
                 ProjectItemView(item: item)
-                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .top)
+                    .fullWidth(.top)
             }
         }
     }

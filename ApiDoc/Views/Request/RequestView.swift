@@ -20,12 +20,14 @@ struct RequestView: View {
                 }
                 
                 VStack (alignment: .leading) {
-                    Text(requestItem.name)
+                    Text(requestItem.name).fullWidth()
+                    Text(requestItem.request!.url.endpoint()).fullWidth()
                 }
                 .padding()
                 .padding(.bottom, geo.safeAreaInsets.bottom)
-                .frame(minWidth: 0, maxWidth: .infinity)
+                .fullWidth()
                 .background(Color.httmMethod(requestItem.request!.method))
+                .foregroundColor(.white)
             }
             .edgesIgnoringSafeArea(.all)
         }

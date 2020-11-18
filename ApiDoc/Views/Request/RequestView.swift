@@ -15,9 +15,20 @@ struct RequestView: View {
             VStack {
                 ScrollView {
                     VStack {
-                        Spacer()
+                        //  MARK: Method
+                        RequestMethodView(requestMethod: requestItem.request!.method)
+                        .padding()
+                        
+                        //  MARK: URL
+                        RequestURLView(requestUrl: requestItem.request!.url)
+                            .padding()
+                        
+                        //  MARK: Headers
+                        RequestHeaders(header: requestItem.request!.header)
+                            .padding()
                     }
                 }
+                .padding(.top, geo.safeAreaInsets.top)
                 
                 VStack (alignment: .leading) {
                     Text(requestItem.name).fullWidth()
@@ -40,7 +51,10 @@ struct RequestView_Previews: PreviewProvider {
             name: "My first Request",
             item: nil,
             request: PostmanRequest(
-                method: .GET, header: [],
+                method: .GET, header: [
+                    .init(key: "Authorization", value: "Your key"),
+                    .init(key: "Content-Type", value: "application/json"),
+                ],
                 body: PostmanBody(mode: .raw, raw: "", urlencoded: nil),
                 url: PostmanUrl(
                     raw: "https://google.com/search?q=Test",
@@ -55,6 +69,7 @@ struct RequestView_Previews: PreviewProvider {
             RequestView(requestItem: request)
                 .edgesIgnoringSafeArea(.all)
                 .previewDisplayName("Light Mode")
+                .previewLayout(PreviewLayout.sizeThatFits)
             
             RequestView(requestItem: request)
                 .background(Color(.systemBackground))

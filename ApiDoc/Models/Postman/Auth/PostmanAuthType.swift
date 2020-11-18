@@ -8,5 +8,5 @@
 import Foundation
 
 enum PostmanAuthType: String, Decodable {
-    case bearer
+    case bearer, noauth
 }

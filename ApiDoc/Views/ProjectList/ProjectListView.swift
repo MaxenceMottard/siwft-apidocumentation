@@ -12,7 +12,7 @@ struct ProjectListView: View {
     @InjectedObservedObject private var viewModel: ProjectListViewModel
     
     var body: some View {
-        ScrollView(.vertical, showsIndicators: true) {
+        ScrollView(.vertical, showsIndicators: false) {
             Text("Liste des projets")
                 .font(.title)
                 .bold()

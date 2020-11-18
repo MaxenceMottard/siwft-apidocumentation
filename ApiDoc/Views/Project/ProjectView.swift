@@ -13,7 +13,7 @@ struct ProjectView: View {
     @AppStorage("displayRequestEndpoint") var displayRequestEndpoint = false
     
     var body: some View {
-        ScrollView {
+        ScrollView(.vertical, showsIndicators: false) {
             VStack {
                 Text(viewModel.project.info.name)
                     .font(.title)

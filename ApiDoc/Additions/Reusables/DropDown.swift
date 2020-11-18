@@ -38,20 +38,37 @@ struct DropDown<A: View, B: View>: View {
 }
 
 struct DropDown_Previews: PreviewProvider {
-//    @State var isExpanded: Bool = false
-    
     static var previews: some View {
-//        DropDown({
-//            HStack {
-//                Text("Initial View")
-//                Image(systemName: "arrowtriangle.down.fill")
-//                    .font(.system(size: 20.0))
-//            }
-//        }, expandedView: {
-//            VStack {
-//                Text("Expanded View")
-//            }
-//        }, isExpandedBinding: $isExpanded)
-        Text("anavailable")
+        Group {
+            DropDown({
+                HStack {
+                    Text("Initial View")
+                    Image(systemName: "arrowtriangle.down.fill")
+                        .font(.system(size: 20.0))
+                }
+            }, expandedView: {
+                VStack {
+                    Text("Expanded View")
+                }
+            }, isExpanded: Binding.constant(false))
+            .previewLayout(PreviewLayout.sizeThatFits)
+            .padding()
+            .previewDisplayName("Not expanded")
+            
+            DropDown({
+                HStack {
+                    Text("Initial View")
+                    Image(systemName: "arrowtriangle.down.fill")
+                        .font(.system(size: 20.0))
+                }
+            }, expandedView: {
+                VStack {
+                    Text("Expanded View")
+                }
+            }, isExpanded: Binding.constant(true))
+            .previewLayout(PreviewLayout.sizeThatFits)
+            .padding()
+            .previewDisplayName("Expanded")
+        }
     }
 }
